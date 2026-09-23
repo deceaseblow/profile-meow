@@ -27,3 +27,4 @@ dist-ssr
 firebase-service-account.json
 .env
 .env.local
+data.json

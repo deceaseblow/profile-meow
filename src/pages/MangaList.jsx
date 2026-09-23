@@ -67,9 +67,9 @@ const MangaList = () => {
       selectedGenre === "All"
         ? true
         : manga.genres?.some(
-            (genre) =>
-              genre.toLowerCase() === selectedGenre.toLowerCase()
-          );
+          (genre) =>
+            genre.toLowerCase() === selectedGenre.toLowerCase()
+        );
 
     return matchesSearch && matchesGenre;
   });
@@ -162,11 +162,10 @@ const MangaList = () => {
             <button
               key={genre}
               onClick={() => setSelectedGenre(genre)}
-              className={`px-4 py-2 rounded-full border transition-all duration-200 ${
-                selectedGenre === genre
+              className={`px-4 py-2 rounded-full border transition-all duration-200 ${selectedGenre === genre
                   ? "bg-black text-white border-black"
                   : "bg-white text-black border-gray-400 hover:bg-gray-100"
-              }`}
+                }`}
             >
               {genre}
             </button>
@@ -237,49 +236,49 @@ const MangaList = () => {
                 className="w-full px-4 py-2 border border-gray-400 rounded text-black"
               />
 
-             {/* GENRES */}
+              {/* GENRES */}
 
-<div>
-  <label className="block mb-2 font-semibold text-black">
-    Genres
-  </label>
+              <div>
+                <label className="block mb-2 font-semibold text-black">
+                  Genres
+                </label>
 
-  <div className="w-full border border-gray-400 rounded p-4 bg-white">
-    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-      {genres
-        .filter((genre) => genre !== "All")
-        .map((genre) => (
-          <label
-            key={genre}
-            className="flex items-center gap-2 text-black cursor-pointer"
-          >
-            <input
-              type="checkbox"
-              checked={newManga.genres.includes(genre)}
-              onChange={(e) => {
-                if (e.target.checked) {
-                  setNewManga({
-                    ...newManga,
-                    genres: [...newManga.genres, genre],
-                  });
-                } else {
-                  setNewManga({
-                    ...newManga,
-                    genres: newManga.genres.filter(
-                      (item) => item !== genre
-                    ),
-                  });
-                }
-              }}
-              className="w-4 h-4"
-            />
+                <div className="w-full border border-gray-400 rounded p-4 bg-white">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                    {genres
+                      .filter((genre) => genre !== "All")
+                      .map((genre) => (
+                        <label
+                          key={genre}
+                          className="flex items-center gap-2 text-black cursor-pointer"
+                        >
+                          <input
+                            type="checkbox"
+                            checked={newManga.genres.includes(genre)}
+                            onChange={(e) => {
+                              if (e.target.checked) {
+                                setNewManga({
+                                  ...newManga,
+                                  genres: [...newManga.genres, genre],
+                                });
+                              } else {
+                                setNewManga({
+                                  ...newManga,
+                                  genres: newManga.genres.filter(
+                                    (item) => item !== genre
+                                  ),
+                                });
+                              }
+                            }}
+                            className="w-4 h-4"
+                          />
 
-            <span>{genre}</span>
-          </label>
-        ))}
-    </div>
-  </div>
-</div>
+                          <span>{genre}</span>
+                        </label>
+                      ))}
+                  </div>
+                </div>
+              </div>
 
               {/* STATUS */}
               <select
