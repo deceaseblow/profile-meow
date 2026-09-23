@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "ArcaneNine";
+  src: url("./assets/fonts/arcane-nine/arcane-nine/Arcane Nine.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.arcane-font {
+  font-family: "ArcaneNine", sans-serif;
+}
+
+@font-face {
+  font-family: "Beaufort-for-lol";
+  src: url("./assets/fonts/beaufort-for-lol/beaufort-for-lol/BeaufortforLOL-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.beaufort {
+  font-family: "Beaufort-for-lol";
+}
+
+@font-face {
+  font-family: "antsValley";
+  src: url("/fonts/ants_valley/AntsValley.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.antsValley {
+  font-family: "antsValley";
+}
+
+@font-face {
+  font-family: "deathNote";
+  src: url("./assets/fonts/death-note/DeathNote.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.deathNote {
+  font-family: "deathNote", serif;
+}
+
+
+
+/* CURSOR LINKS :
+                          MIKU ----   
+                          *{cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1136.ani), url(https://cur.cursors-4u.net/anime/ani-12/ani1136.gif), auto !important;}
+                          SPRINKLE --- 
+                          *{cursor: url(https://cur.cursors-4u.net/special/spe-3/spe302.ani), url(https://cur.cursors-4u.net/special/spe-3/spe302.png), auto !important;}
+                          NYAN RAINBOW CAT !!  
+                          * {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat927.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat927.png), auto !important;} 
+                          tiny skull ---  
+                          * {cursor: url(https://cur.cursors-4u.net/holidays/hol-4/hol338.cur), auto !important;}
+                          KIRBY!!! -- 
+                          *{cursor: url(https://cur.cursors-4u.net/games/gam-9/gam858.ani), url(https://cur.cursors-4u.net/games/gam-9/gam858.png), auto !important;}
+                          KISS ME!!!!!!
+                          * {cursor: url(https://ani.cursors-4u.net/symbols/sym-9/sym829.ani), url(https://ani.cursors-4u.net/symbols/sym-9/sym829.png), auto !important;} 
+*/
+* {cursor: url(https://ani.cursors-4u.net/symbols/sym-9/sym829.ani), url(https://ani.cursors-4u.net/symbols/sym-9/sym829.png), auto !important;} 
